@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School of Open Learning (Affiliated to University of Pune)  - Quality distance education programs, online courses, and flexible learning solutions">
+    <meta name="keywords" content="open learning, distance education, online courses (UG course BA and BCom, PG Course MA (Economics, English, Hindi, Marathi, Sociology, History, Education)), SOL, university programs, syllabus, results, notices">
+    <meta name="author" content="School of Open Learning">
+    
+    <!-- Open Graph / Facebook / Twitter Cards for better social sharing -->
+    <meta property="og:title" content="School of Open Learning | Quality Distance Education">
+    <meta property="og:description" content="Access quality education through our open learning programs. View syllabus, check results, and stay updated with notices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.schoolofopenlearning.edu">
+    <meta property="og:image" content="https://www.schoolofopenlearning.edu/images/sol-social.jpg">
+    
+    <title>School of Open Learning | Quality Distance Education</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.schoolofopenlearning.edu">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --text-light: #7f8c8d;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--secondary-color);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/pattern.png') repeat;
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .quick-links {
+            background-color: var(--light-color);
+            padding: 2rem 0;
+        }
+        
+        .quick-link-item {
+            display: block;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .quick-link-item:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .quick-link-item i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .quick-link-item:hover i {
+            color: white;
+        }
+        
+        .notice-board {
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .notice-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .notice-item:last-child {
+            border-bottom: none;
+        }
+        
+        .notice-date {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-links h5 {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h5::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--secondary-color);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary-color);
+            padding-left: 5px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .ad-unit {
+            background-color: #f9f9f9;
+            border: 1px dashed #ccc;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .ad-label {
+            font-size: 0.8rem;
+            color: #999;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        
+        /* Document viewer styles */
+        .document-viewer {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .document-actions {
+            margin-top: 1.5rem;
+        }
+        
+        .btn-download {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .btn-download:hover {
+            background-color: #2980b9;
+            color: white;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+            
+            .hero-section {
+                padding: 3rem 0;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0.75rem 0;
+        }
+        
+        .breadcrumb-item a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        /* Search box */
+        .search-box {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .search-box input {
+            padding-right: 40px;
+            border-radius: 50px;
+        }
+        
+        .search-box button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background: none;
+            border: none;
+            color: var(--secondary-color);
+        }
+        
+        /* Document filter */
+        .document-filter {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+        
+        .filter-title {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-color);
+        }
+        
+        /* Loading animation */
+        .loader {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .loader i {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SOL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                            <li><a class="dropdown-item" href="undergraduate.html">Undergraduate</a></li>
+                            <li><a class="dropdown-item" href="postgraduate.html">Postgraduate</a></li>
+                            <li><a class="dropdown-item" href="diploma.html">Diploma Courses</a></li>
+                            <li><a class="dropdown-item" href="certificate.html">Certificate Courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="syllabus.html">Syllabus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="results.html">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notices.html">Notices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><i class="fas fa-user"></i> Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title mb-4">School of Open Learning</h1>
+                    <p class="lead mb-4">Providing quality education through flexible learning solutions for students worldwide.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="admission.html" class="btn btn-light btn-lg">Admissions Open</a>
+                        <a href="programs.html" class="btn btn-outline-light btn-lg">Explore Programs</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="images/hero-image.png" alt="Online Learning" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Unit - Leaderboard -->
+    <div class="container mt-4 mb-4">
+        <div class="ad-unit">
+            <div class="ad-label">Advertisement</div>
+            <!-- Replace with your Google AdSense code -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+                crossorigin="anonymous"></script>
+            <!-- SOL_Leaderboard -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                data-ad-slot="YOUR_AD_SLOT_ID"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="syllabus.html" class="quick-link-item">
+                        <i class="fas fa-book-open"></i> Syllabus
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="results.html" class="quick-link-item">
+                        <i class="fas fa-poll"></i> Results
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="notices.html" class="quick-link-item">
+                        <i class="fas fa-bullhorn"></i> Notices
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="admission.html" class="quick-link-item">
+                        <i class="fas fa-user-graduate"></i> Admission
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content Area -->
+                <div class="col-lg-8">
+                    <!-- Document Viewer Section -->
+                    <div class="document-viewer">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="syllabus.html">Syllabus</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Bachelor of Arts</li>
+                            </ol>
+                        </nav>
+                        
+                        <h2 class="mb-4">Bachelor of Arts Syllabus</h2>
+                        
+                        <div class="document-filter mb-4">
+                            <h3 class="filter-title">Filter Documents</h3>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="program-select" class="form-label">Program</label>
+                                    <select class="form-select" id="program-select">
+                                        <option selected>Select Program</option>
+                                        <option>Bachelor of Arts</option>
+                                        <option>Bachelor of Commerce</option>
+                                        <option>Bachelor of Science</option>
+                                        <option>Master of Arts</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="year-select" class="form-label">Year</label>
+                                    <select class="form-select" id="year-select">
+                                        <option selected>Select Year</option>
+                                        <option>First Year</option>
+                                        <option>Second Year</option>
+                                        <option>Third Year</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="subject-select" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject-select">
+                                        <option selected>Select Subject</option>
+                                        <option>English</option>
+                                        <option>History</option>
+                                        <option>Political Science</option>
+                                        <option>Economics</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button id="filter-btn" class="btn btn-primary">Apply Filters</button>
+                        </div>
+                        
+                        <div class="search-box">
+                            <input type="text" class="form-control" placeholder="Search within documents...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                        
+                        <div class="loader" id="document-loader">
+                            <i class="fas fa-spinner"></i>
+                            <p>Loading document...</p>
+                        </div>
+                        
+                        <div id="document-content">
+                            <!-- Document content will be loaded here dynamically -->
+                            <h3>Bachelor of Arts - English Syllabus (2023-2024)</h3>
+                            <p><strong>Program Code:</strong> BA-ENG-2023</p>
+                            <p><strong>Duration:</strong> 3 Years (6 Semesters)</p>
+                            
+                            <h4 class="mt-4">First Year</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Paper Code</th>
+                                            <th>Paper Title</th>
+                                            <th>Credits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ENG101</td>
+                                            <td>History of English Literature - I</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ENG102</td>
+                                            <td>British Poetry - I</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ENG103</td>
+                                            <td>European Classical Literature</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <h4 class="mt-4">Second Year</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Paper Code</th>
+                                            <th>Paper Title</th>
+                                            <th>Credits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ENG201</td>
+                                            <td>History of English Literature - II</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ENG202</td>
+                                            <td>British Poetry - II</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ENG203</td>
+                                            <td>American Literature</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <h4 class="mt-4">Third Year</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Paper Code</th>
+                                            <th>Paper Title</th>
+                                            <th>Credits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ENG301</td>
+                                            <td>Modern British Literature</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ENG302</td>
+                                            <td>Literary Criticism</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ENG303</td>
+                                            <td>World Literature</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="document-actions">
+                                <button class="btn btn-download me-2">
+                                    <i class="fas fa-download me-2"></i>Download PDF
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="fas fa-print me-2"></i>Print
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ad Unit - Rectangle -->
+                    <div class="ad-unit mt-5 mb-5">
+                        <div class="ad-label">Advertisement</div>
+                        <!-- Replace with your Google AdSense code -->
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+                            crossorigin="anonymous"></script>
+                        <!-- SOL_Rectangle -->
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                            data-ad-slot="YOUR_AD_SLOT_ID"
+                            data-ad-format="auto"
+                            data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Notice Board -->
+                    <div class="card notice-board mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-bullhorn me-2"></i>Notice Board</h3>
+                            <div class="notice-list">
+                                <div class="notice-item">
+                                    <h5><a href="notice-detail.html">Admission Deadline Extended</a></h5>
+                                    <p class="notice-date">June 15, 2023</p>
+                                    <p>Last date for admission extended to June 30, 2023 for all undergraduate programs.</p>
+                                </div>
+                                <div class="notice-item">
+                                    <h5><a href="notice-detail.html">Exam Schedule Released</a></h5>
+                                    <p class="notice-date">June 10, 2023</p>
+                                    <p>Annual examination schedule for all programs has been published.</p>
+                                </div>
+                                <div class="notice-item">
+                                    <h5><a href="notice-detail.html">Online Payment Facility</a></h5>
+                                    <p class="notice-date">June 5, 2023</p>
+                                    <p>Now pay your fees online through our secure payment gateway.</p>
+                                </div>
+                            </div>
+                            <a href="notices.html" class="btn btn-outline-primary mt-3">View All Notices</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-link me-2"></i>Quick Links</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item border-0 px-0 py-2">
+                                    <a href="timetable.html"><i class="fas fa-calendar-alt me-2"></i>Exam Timetable</a>
+                                </li>
+                                <li class="list-group-item border-0 px-0 py-2">
+                                    <a href="study-material.html"><i class="fas fa-book me-2"></i>Study Material</a>
+                                </li>
+                                <li class="list-group-item border-0 px-0 py-2">
+                                    <a href="faq.html"><i class="fas fa-question-circle me-2"></i>FAQ</a>
+                                </li>
+                                <li class="list-group-item border-0 px-0 py-2">
+                                    <a href="contact.html"><i class="fas fa-envelope me-2"></i>Contact Us</a>
+                                </li>
+                                <li class="list-group-item border-0 px-0 py-2">
+                                    <a href="grievance.html"><i class="fas fa-comment-alt me-2"></i>Grievance Redressal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Ad Unit - Sidebar -->
+                    <div class="ad-unit mb-4">
+                        <div class="ad-label">Advertisement</div>
+                        <!-- Replace with your Google AdSense code -->
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+                            crossorigin="anonymous"></script>
+                        <!-- SOL_Sidebar -->
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                            data-ad-slot="YOUR_AD_SLOT_ID"
+                            data-ad-format="auto"
+                            data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    
+                    <!-- Upcoming Events -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-calendar-check me-2"></i>Upcoming Events</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item border-0 px-0 py-2">
+                                    <h5>Admission Counseling</h5>
+                                    <p class="text-muted mb-1"><i class="fas fa-clock me-2"></i>June 20, 2023 | 10:00 AM</p>
+                                    <p>Online counseling session for new admissions.</p>
+                                </li>
+                                <li class="list-group-item border-0 px-0 py-2">
+                                    <h5>Webinar on Distance Learning</h5>
+                                    <p class="text-muted mb-1"><i class="fas fa-clock me-2"></i>June 25, 2023 | 2:00 PM</p>
+                                    <p>Learn about the benefits of open learning.</p>
+                                </li>
+                            </ul>
+                            <a href="events.html" class="btn btn-outline-primary mt-3">View All Events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Students Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="images/student1.jpg" class="rounded-circle mb-3" width="100" alt="Student">
+                            <h4>Rahul Sharma</h4>
+                            <p class="text-muted">BA English, 2022</p>
+                            <p>"SOL provided me the flexibility to pursue my degree while working full-time. The study material was comprehensive and the faculty support was excellent."</p>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="images/student2.jpg" class="rounded-circle mb-3" width="100" alt="Student">
+                            <h4>Priya Patel</h4>
+                            <p class="text-muted">BCom, 2021</p>
+                            <p>"The online resources and virtual classrooms made learning convenient. I could access lectures anytime, which was perfect for my schedule."</p>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="images/student3.jpg" class="rounded-circle mb-3" width="100" alt="Student">
+                            <h4>Ankit Verma</h4>
+                            <p class="text-muted">MA History, 2023</p>
+                            <p>"As someone from a remote area, SOL gave me access to quality education I wouldn't have otherwise. The digital library was particularly helpful."</p>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Unit - Bottom Banner -->
+    <div class="container mt-4 mb-4">
+        <div class="ad-unit">
+            <div class="ad-label">Advertisement</div>
+            <!-- Replace with your Google AdSense code -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+                crossorigin="anonymous"></script>
+            <!-- SOL_Bottom_Banner -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                data-ad-slot="YOUR_AD_SLOT_ID"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-links mb-4">
+                    <h5>About SOL</h5>
+                    <p>The School of Open Learning is committed to providing quality education through flexible learning solutions, making higher education accessible to all.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 footer-links mb-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="results.html">Results</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links mb-4">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="syllabus.html">Syllabus</a></li>
+                        <li><a href="study-material.html">Study Material</a></li>
+                        <li><a href="library.html">Digital Library</a></li>
+                        <li><a href="timetable.html">Exam Timetable</a></li>
+                        <li><a href="notices.html">Notices</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Education Road, Learning City, LC 12345</li>
+                        <li><i class="fas fa-phone-alt me-2"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@schoolofopenlearning.edu</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p class="mb-0">&copy; 2023 School of Open Learning. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99;">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Back to top button
+        window.addEventListener('scroll', function() {
+            var backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        
+        // Document filter functionality
+        document.getElementById('filter-btn').addEventListener('click', function() {
+            var loader = document.getElementById('document-loader');
+            var content = document.getElementById('document-content');
+            
+            // Show loader
+            loader.style.display = 'block';
+            content.style.display = 'none';
+            
+            //
