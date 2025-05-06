@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="SOL">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SOL | School of Open Learning</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-br from-blue-50 via-pink-50 to-purple-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
   <!-- Navbar -->
   <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
-      <h1 class="text-3xl font-extrabold text-purple-700">🎓 SOL Portal</h1>
-      <nav class="space-x-4 hidden md:flex text-sm font-medium">
-        <a href="#courses" class="hover:text-pink-600">Courses</a>
-        <a href="#admission" class="hover:text-pink-600">Admission</a>
-        <a href="#ids" class="hover:text-pink-600">ABC & DBE</a>
-        <a href="#syllabus" class="hover:text-pink-600">Syllabus</a>
-        <a href="#study-material" class="hover:text-pink-600">Study Material</a>
-        <a href="#exam" class="hover:text-pink-600">Exams</a>
-        <a href="#documents" class="hover:text-pink-600">Documents</a>
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-700">SOL - School of Open Learning</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#courses" class="text-gray-600 hover:text-blue-600">Courses</a>
+        <a href="#admission" class="text-gray-600 hover:text-blue-600">Admission</a>
+        <a href="#ids" class="text-gray-600 hover:text-blue-600">IDs</a>
+        <a href="#exam" class="text-gray-600 hover:text-blue-600">Exams</a>
+        <a href="#docs" class="text-gray-600 hover:text-blue-600">Documents</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="text-center py-16 bg-gradient-to-r from-pink-200 via-purple-200 to-blue-200">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-5xl font-bold mb-4 text-purple-800">Empowering Learners Through Flexible Education</h2>
-      <p class="text-lg text-gray-700 mb-6">Join our vibrant academic community for UG and PG programs. Access quality education anywhere, anytime.</p>
-      <a href="#admission" class="bg-purple-700 text-white font-bold px-8 py-3 rounded-full hover:bg-purple-800 transition">Apply Now</a>
+  <section class="bg-blue-700 text-white text-center py-16">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4">Welcome to School of Open Learning</h2>
+      <p class="text-lg mb-6">Flexible learning for UG and PG programs. Explore, Enroll, and Excel at your own pace.</p>
+      <a href="#admission" class="bg-white text-blue-700 font-semibold px-6 py-3 rounded hover:bg-blue-100 transition">Get Started</a>
     </div>
   </section>
 
-  <!-- Courses -->
-  <section id="courses" class="py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center text-blue-700 mb-12">📚 Courses Offered</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-400">
-          <h4 class="text-xl font-bold mb-2">Undergraduate</h4>
-          <ul class="list-disc list-inside text-gray-700">
+  <!-- Courses Section -->
+  <section id="courses" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-8 text-center">Courses Offered</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-blue-50 p-6 rounded-xl shadow">
+          <h4 class="font-bold text-xl mb-2">Undergraduate</h4>
+          <ul class="list-disc pl-5 text-gray-700">
             <li>BA</li>
             <li>BCom</li>
           </ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-pink-400">
-          <h4 class="text-xl font-bold mb-2">Postgraduate</h4>
-          <ul class="list-disc list-inside text-gray-700">
+        <div class="bg-blue-50 p-6 rounded-xl shadow">
+          <h4 class="font-bold text-xl mb-2">Postgraduate</h4>
+          <ul class="list-disc pl-5 text-gray-700">
             <li>MA English</li>
             <li>MA Economics</li>
             <li>MA History</li>
@@ -60,91 +58,75 @@
     </div>
   </section>
 
-  <!-- Admission -->
-  <section id="admission" class="py-16 bg-gradient-to-r from-purple-100 via-pink-100 to-yellow-100">
-    <div class="max-w-5xl mx-auto px-6">
-      <h3 class="text-4xl font-bold text-center text-pink-700 mb-6">🎟️ Admission Procedure</h3>
-      <p class="text-center text-gray-700 max-w-3xl mx-auto mb-8">Get step-by-step guidance on eligibility, form submission, fees, and timelines for joining UG or PG courses.</p>
+  <!-- Admission Procedure -->
+  <section id="admission" class="py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6 text-center">Admission Procedure</h3>
+      <p class="text-gray-700 text-center max-w-3xl mx-auto mb-6">Learn how to apply for our programs with a step-by-step admission guide and eligibility criteria.</p>
       <div class="flex justify-center">
-        <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700">View Admission Guide</a>
+        <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">View Details</a>
       </div>
     </div>
   </section>
 
-  <!-- ABC & DBE ID -->
-  <section id="ids" class="py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center text-indigo-700 mb-10">🆔 Academic & Digital IDs</h3>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-indigo-400">
-          <h4 class="text-xl font-bold mb-2">ABC ID</h4>
-          <p class="text-gray-700">Your Academic Bank of Credits ID helps maintain a central academic record across institutions.</p>
+  <!-- ABC and DBE IDs -->
+  <section id="ids" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-8">Student Identification</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-blue-100 p-6 rounded-xl shadow">
+          <h4 class="font-bold text-xl mb-2">ABC ID</h4>
+          <p class="text-gray-700">Academic Bank of Credits (ABC) ID is mandatory for tracking academic achievements.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-indigo-400">
-          <h4 class="text-xl font-bold mb-2">DBE ID</h4>
-          <p class="text-gray-700">DBE ID links your academic activities to the Digital Bharat Education platform for nationwide access.</p>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">
+          <h4 class="font-bold text-xl mb-2">DBE ID</h4>
+          <p class="text-gray-700">Digital Bharat Education (DBE) ID is used for national academic integration and services.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Syllabus -->
-  <section id="syllabus" class="py-16 bg-gradient-to-br from-yellow-100 to-red-100">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center text-red-700 mb-8">📝 Course Syllabus</h3>
-      <p class="text-center text-gray-700 max-w-3xl mx-auto mb-6">Detailed semester-wise syllabus for all programs including electives and practicals.</p>
-    </div>
-  </section>
-
-  <!-- Study Material -->
-  <section id="study-material" class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center text-green-600 mb-8">📦 Study Materials</h3>
-      <p class="text-center text-gray-700 max-w-3xl mx-auto mb-6">Access e-books, PDFs, recorded lectures and reference materials for all subjects.</p>
     </div>
   </section>
 
   <!-- Exam Section -->
-  <section id="exam" class="py-16 bg-gradient-to-tr from-blue-100 to-purple-200">
+  <section id="exam" class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center text-blue-700 mb-8">📝 Examination Services</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow">
+      <h3 class="text-3xl font-bold mb-8 text-center">Exam Section</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-5 rounded-lg shadow">
           <h4 class="font-semibold mb-2">Exam Form</h4>
-          <p>Submit forms online before deadlines with fees and subject selection.</p>
+          <p>Fill and submit your semester exam form.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="bg-white p-5 rounded-lg shadow">
           <h4 class="font-semibold mb-2">Hall Ticket</h4>
-          <p>Download admit card before exams with exam center and subject info.</p>
+          <p>Download your hall ticket for upcoming exams.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="bg-white p-5 rounded-lg shadow">
           <h4 class="font-semibold mb-2">Results</h4>
-          <p>Access your semester results and grade sheets directly.</p>
+          <p>Check your results online after evaluation.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Other Documents -->
-  <section id="documents" class="py-16 bg-gradient-to-br from-gray-100 to-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center text-gray-800 mb-8">📄 Certificates & Documents</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow-md">
-          <h4 class="font-semibold mb-2">Transfer Certificate</h4>
-          <p>Request your TC for shifting to other institutions or universities.</p>
+  <section id="docs" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6 text-center">Important Documents</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-6 rounded-xl">
+          <h4 class="font-semibold text-lg mb-2">Transfer Certificate</h4>
+          <p>Request and download your transfer certificate.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-md">
-          <h4 class="font-semibold mb-2">Migration Certificate</h4>
-          <p>Apply for migration certificate required for other university admissions.</p>
+        <div class="bg-gray-100 p-6 rounded-xl">
+          <h4 class="font-semibold text-lg mb-2">Migration Certificate</h4>
+          <p>Get your migration certificate for further studies.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-purple-800 text-white py-6 text-center">
-    <p>&copy; 2025 SOL - School of Open Learning. Designed with ❤️ for open education.</p>
+  <footer class="bg-blue-700 text-white text-center py-6 mt-12">
+    <p>&copy; 2025 School of Open Learning. All Rights Reserved.</p>
   </footer>
 
 </body>
