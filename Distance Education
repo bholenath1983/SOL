@@ -1,356 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset=" Distance learning ">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="School of Open Learning (Affiliated to University of Pune)  - Quality distance education programs, online courses, and flexible learning solutions">
-    <meta name="keywords" content="open learning, distance education, online courses (UG course BA and BCom, PG Course MA (Economics, English, Hindi, Marathi, Sociology, History, Education)), SOL, university programs, syllabus, results, notices">
+    <meta name="description" content="School of Open Learning (SOL) - Offering UG and PG courses including BA, BCom, MA in various subjects. Admission procedures, study materials, exam forms and results.">
+    <meta name="keywords" content="SOL, Open Learning, Distance Education, BA, BCom, MA, Admission, Syllabus, Study Material, Exam Results">
     <meta name="author" content="School of Open Learning">
-    
-    <!-- Open Graph / Facebook / Twitter Cards for better social sharing -->
-    <meta property="og:title" content="School of Open Learning | Quality Distance Education">
-    <meta property="og:description" content="Access quality education through our open learning programs. View syllabus, check results, and stay updated with notices.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.schoolofopenlearning.edu">
-    <meta property="og:image" content="https://www.schoolofopenlearning.edu/images/sol-social.jpg">
-    
-    <title>School of Open Learning | Quality Distance Education</title>
+    <title>School of Open Learning (SOL) | Distance Education Programs</title>
     
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="School of Open Learning (SOL)">
+    <meta property="og:description" content="Offering UG and PG courses including BA, BCom, MA in various subjects">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://soluniversity.example.com">
+    <meta property="og:image" content="https://soluniversity.example.com/images/sol-social.jpg">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.schoolofopenlearning.edu">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="canonical" href="https://soluniversity.example.com">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- Custom CSS -->
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --light-color: #ecf0f1;
-            --dark-color: #2c3e50;
-            --text-color: #333;
-            --text-light: #7f8c8d;
+            --primary-color: #0056b3;
+            --secondary-color: #6c757d;
+            --accent-color: #ffc107;
+            --light-bg: #f8f9fa;
+            --dark-bg: #343a40;
         }
         
         body {
-            font-family: 'Roboto', sans-serif;
-            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            overflow-x: hidden;
+            color: #333;
         }
         
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-        }
-        
-        .navbar {
-            background-color: var(--primary-color);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .navbar-brand {
-            font-weight: 700;
-            font-size: 1.8rem;
-        }
-        
-        .nav-link {
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link:hover {
-            color: var(--secondary-color);
+        .navbar-brand img {
+            height: 50px;
         }
         
         .hero-section {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1920x600') no-repeat center center;
+            background-size: cover;
             color: white;
-            padding: 5rem 0;
-            position: relative;
-            overflow: hidden;
+            padding: 100px 0;
+            margin-bottom: 30px;
         }
         
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('images/pattern.png') repeat;
-            opacity: 0.1;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .card {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .course-card {
+            transition: transform 0.3s, box-shadow 0.3s;
             margin-bottom: 20px;
             height: 100%;
         }
         
-        .card:hover {
+        .course-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
         
-        .card-icon {
+        .feature-box {
+            padding: 30px;
+            background-color: var(--light-bg);
+            border-radius: 5px;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        
+        .feature-icon {
             font-size: 2.5rem;
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
         }
         
-        .quick-links {
-            background-color: var(--light-color);
-            padding: 2rem 0;
-        }
-        
-        .quick-link-item {
-            display: block;
-            padding: 1rem;
-            background: white;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            color: var(--text-color);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-        
-        .quick-link-item:hover {
-            background-color: var(--secondary-color);
+        footer {
+            background-color: var(--dark-bg);
             color: white;
-            transform: translateX(5px);
-        }
-        
-        .quick-link-item i {
-            margin-right: 10px;
-            color: var(--secondary-color);
-        }
-        
-        .quick-link-item:hover i {
-            color: white;
-        }
-        
-        .notice-board {
-            border-left: 4px solid var(--accent-color);
-        }
-        
-        .notice-item {
-            padding: 1rem 0;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .notice-item:last-child {
-            border-bottom: none;
-        }
-        
-        .notice-date {
-            font-size: 0.9rem;
-            color: var(--text-light);
-        }
-        
-        .footer {
-            background-color: var(--dark-color);
-            color: white;
-            padding: 3rem 0 1rem;
-        }
-        
-        .footer-links h5 {
-            margin-bottom: 1.5rem;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .footer-links h5::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 2px;
-            background-color: var(--secondary-color);
-        }
-        
-        .footer-links ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .footer-links li {
-            margin-bottom: 0.8rem;
-        }
-        
-        .footer-links a {
-            color: #bdc3c7;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: var(--secondary-color);
-            padding-left: 5px;
+            padding: 40px 0;
         }
         
         .social-icons a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
             color: white;
-            border-radius: 50%;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .ad-container {
+            background-color: #f1f1f1;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
             text-align: center;
-            line-height: 40px;
-            margin-right: 10px;
-            transition: all 0.3s ease;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
-        .social-icons a:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-3px);
-        }
-        
-        .copyright {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .ad-unit {
-            background-color: #f9f9f9;
-            border: 1px dashed #ccc;
-            padding: 20px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        .ad-label {
-            font-size: 0.8rem;
-            color: #999;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-        }
-        
-        /* Document viewer styles */
-        .document-viewer {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .document-actions {
-            margin-top: 1.5rem;
-        }
-        
-        .btn-download {
-            background-color: var(--secondary-color);
-            color: white;
-        }
-        
-        .btn-download:hover {
-            background-color: #2980b9;
-            color: white;
-        }
-        
-        /* Responsive adjustments */
         @media (max-width: 768px) {
-            .navbar-brand {
-                font-size: 1.5rem;
-            }
-            
             .hero-section {
-                padding: 3rem 0;
+                padding: 60px 0;
             }
             
-            .hero-title {
-                font-size: 2rem;
+            .navbar-brand img {
+                height: 40px;
             }
         }
         
         /* Breadcrumb */
         .breadcrumb {
             background-color: transparent;
-            padding: 0.75rem 0;
+            padding: 0;
         }
         
-        .breadcrumb-item a {
+        /* Accordion styling */
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(0, 86, 179, 0.1);
+            color: var(--primary-color);
+        }
+        
+        /* Tab styling */
+        .nav-tabs .nav-link.active {
+            color: var(--primary-color);
+            font-weight: bold;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .nav-tabs .nav-link {
             color: var(--secondary-color);
-            text-decoration: none;
-        }
-        
-        /* Search box */
-        .search-box {
-            position: relative;
-            margin-bottom: 2rem;
-        }
-        
-        .search-box input {
-            padding-right: 40px;
-            border-radius: 50px;
-        }
-        
-        .search-box button {
-            position: absolute;
-            right: 5px;
-            top: 5px;
-            background: none;
-            border: none;
-            color: var(--secondary-color);
-        }
-        
-        /* Document filter */
-        .document-filter {
-            background-color: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            margin-bottom: 2rem;
-        }
-        
-        .filter-title {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--light-color);
-        }
-        
-        /* Loading animation */
-        .loader {
-            display: none;
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        .loader i {
-            font-size: 2rem;
-            color: var(--secondary-color);
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
@@ -359,81 +143,80 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+    
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">SOL</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/150x50?text=SOL+Logo" alt="School of Open Learning Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Programs
+                        <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown">
+                            Courses
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
-                            <li><a class="dropdown-item" href="undergraduate.html">Undergraduate</a></li>
-                            <li><a class="dropdown-item" href="postgraduate.html">Postgraduate</a></li>
-                            <li><a class="dropdown-item" href="diploma.html">Diploma Courses</a></li>
-                            <li><a class="dropdown-item" href="certificate.html">Certificate Courses</a></li>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">Undergraduate</h6></li>
+                            <li><a class="dropdown-item" href="#ug-courses">BA</a></li>
+                            <li><a class="dropdown-item" href="#ug-courses">BCom</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Postgraduate</h6></li>
+                            <li><a class="dropdown-item" href="#pg-courses">MA English</a></li>
+                            <li><a class="dropdown-item" href="#pg-courses">MA Economics</a></li>
+                            <li><a class="dropdown-item" href="#pg-courses">MA History</a></li>
+                            <li><a class="dropdown-item" href="#pg-courses">MA Hindi</a></li>
+                            <li><a class="dropdown-item" href="#pg-courses">MA Marathi</a></li>
+                            <li><a class="dropdown-item" href="#pg-courses">MA Education</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="syllabus.html">Syllabus</a>
+                        <a class="nav-link" href="#admission">Admission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="results.html">Results</a>
+                        <a class="nav-link" href="#study-material">Study Material</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="notices.html">Notices</a>
+                        <a class="nav-link" href="#exams">Exams</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="#documents">Documents</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html"><i class="fas fa-user"></i> Login</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 hero-content">
-                    <h1 class="hero-title mb-4">School of Open Learning</h1>
-                    <p class="lead mb-4">Providing quality education through flexible learning solutions for students worldwide.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="admission.html" class="btn btn-light btn-lg">Admissions Open</a>
-                        <a href="programs.html" class="btn btn-outline-light btn-lg">Explore Programs</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-none d-lg-block">
-                    <img src="images/hero-image.png" alt="Online Learning" class="img-fluid">
-                </div>
-            </div>
+    <section class="hero-section" id="home">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">School of Open Learning</h1>
+            <p class="lead mb-5">Quality Distance Education for Lifelong Learners</p>
+            <a href="#admission" class="btn btn-light btn-lg me-3">Admissions Open</a>
+            <a href="#courses" class="btn btn-outline-light btn-lg">Explore Courses</a>
         </div>
     </section>
-
-    <!-- Ad Unit - Leaderboard -->
-    <div class="container mt-4 mb-4">
-        <div class="ad-unit">
-            <div class="ad-label">Advertisement</div>
-            <!-- Replace with your Google AdSense code -->
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
-                crossorigin="anonymous"></script>
-            <!-- SOL_Leaderboard -->
+    
+    <!-- Ad Container (Top) -->
+    <div class="container">
+        <div class="ad-container">
+            <!-- Google AdSense Ad Unit -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+            crossorigin="anonymous"></script>
+            <!-- SOL_Top_Banner -->
             <ins class="adsbygoogle"
                 style="display:block"
-                data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
-                data-ad-slot="YOUR_AD_SLOT_ID"
+                data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="XXXXXXXXXX"
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
             <script>
@@ -441,370 +224,140 @@
             </script>
         </div>
     </div>
-
-    <!-- Quick Links Section -->
-    <section class="quick-links">
+    
+    <!-- Courses Section -->
+    <section class="py-5" id="courses">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="syllabus.html" class="quick-link-item">
-                        <i class="fas fa-book-open"></i> Syllabus
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="results.html" class="quick-link-item">
-                        <i class="fas fa-poll"></i> Results
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="notices.html" class="quick-link-item">
-                        <i class="fas fa-bullhorn"></i> Notices
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="admission.html" class="quick-link-item">
-                        <i class="fas fa-user-graduate"></i> Admission
-                    </a>
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="fw-bold">Our Courses</h2>
+                    <p class="lead text-muted">Choose from our wide range of undergraduate and postgraduate programs</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <!-- Main Content Area -->
-                <div class="col-lg-8">
-                    <!-- Document Viewer Section -->
-                    <div class="document-viewer">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="syllabus.html">Syllabus</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Bachelor of Arts</li>
-                            </ol>
-                        </nav>
-                        
-                        <h2 class="mb-4">Bachelor of Arts Syllabus</h2>
-                        
-                        <div class="document-filter mb-4">
-                            <h3 class="filter-title">Filter Documents</h3>
-                            <div class="row">
-                                <div class="col-md-4 mb-3">
-                                    <label for="program-select" class="form-label">Program</label>
-                                    <select class="form-select" id="program-select">
-                                        <option selected>Select Program</option>
-                                        <option>Bachelor of Arts</option>
-                                        <option>Bachelor of Commerce</option>
-                                        <option>Bachelor of Science</option>
-                                        <option>Master of Arts</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label for="year-select" class="form-label">Year</label>
-                                    <select class="form-select" id="year-select">
-                                        <option selected>Select Year</option>
-                                        <option>First Year</option>
-                                        <option>Second Year</option>
-                                        <option>Third Year</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label for="subject-select" class="form-label">Subject</label>
-                                    <select class="form-select" id="subject-select">
-                                        <option selected>Select Subject</option>
-                                        <option>English</option>
-                                        <option>History</option>
-                                        <option>Political Science</option>
-                                        <option>Economics</option>
-                                    </select>
+            
+            <ul class="nav nav-tabs mb-4 justify-content-center" id="courseTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="ug-tab" data-bs-toggle="tab" data-bs-target="#ug-courses" type="button">Undergraduate</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pg-tab" data-bs-toggle="tab" data-bs-target="#pg-courses" type="button">Postgraduate</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="courseTabsContent">
+                <!-- UG Courses -->
+                <div class="tab-pane fade show active" id="ug-courses" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card course-card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Bachelor of Arts (BA)</h3>
+                                    <p class="card-text">Comprehensive program covering humanities, social sciences, and languages. Develop critical thinking and communication skills.</p>
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">Duration: 3 Years</li>
+                                        <li class="list-group-item">Eligibility: 10+2 or equivalent</li>
+                                        <li class="list-group-item">Flexible study options</li>
+                                    </ul>
+                                    <a href="#syllabus" class="btn btn-outline-primary">View Syllabus</a>
                                 </div>
                             </div>
-                            <button id="filter-btn" class="btn btn-primary">Apply Filters</button>
                         </div>
-                        
-                        <div class="search-box">
-                            <input type="text" class="form-control" placeholder="Search within documents...">
-                            <button type="submit"><i class="fas fa-search"></i></button>
-                        </div>
-                        
-                        <div class="loader" id="document-loader">
-                            <i class="fas fa-spinner"></i>
-                            <p>Loading document...</p>
-                        </div>
-                        
-                        <div id="document-content">
-                            <!-- Document content will be loaded here dynamically -->
-                            <h3>Bachelor of Arts - English Syllabus (2023-2024)</h3>
-                            <p><strong>Program Code:</strong> BA-ENG-2023</p>
-                            <p><strong>Duration:</strong> 3 Years (6 Semesters)</p>
-                            
-                            <h4 class="mt-4">First Year</h4>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>Paper Code</th>
-                                            <th>Paper Title</th>
-                                            <th>Credits</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>ENG101</td>
-                                            <td>History of English Literature - I</td>
-                                            <td>4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ENG102</td>
-                                            <td>British Poetry - I</td>
-                                            <td>4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ENG103</td>
-                                            <td>European Classical Literature</td>
-                                            <td>4</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                            <h4 class="mt-4">Second Year</h4>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>Paper Code</th>
-                                            <th>Paper Title</th>
-                                            <th>Credits</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>ENG201</td>
-                                            <td>History of English Literature - II</td>
-                                            <td>4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ENG202</td>
-                                            <td>British Poetry - II</td>
-                                            <td>4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ENG203</td>
-                                            <td>American Literature</td>
-                                            <td>4</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                            <h4 class="mt-4">Third Year</h4>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>Paper Code</th>
-                                            <th>Paper Title</th>
-                                            <th>Credits</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>ENG301</td>
-                                            <td>Modern British Literature</td>
-                                            <td>4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ENG302</td>
-                                            <td>Literary Criticism</td>
-                                            <td>4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ENG303</td>
-                                            <td>World Literature</td>
-                                            <td>4</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                            <div class="document-actions">
-                                <button class="btn btn-download me-2">
-                                    <i class="fas fa-download me-2"></i>Download PDF
-                                </button>
-                                <button class="btn btn-outline-secondary">
-                                    <i class="fas fa-print me-2"></i>Print
-                                </button>
+                        <div class="col-md-6">
+                            <div class="card course-card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Bachelor of Commerce (BCom)</h3>
+                                    <p class="card-text">Gain expertise in accounting, finance, and business management. Ideal for careers in commerce and industry.</p>
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">Duration: 3 Years</li>
+                                        <li class="list-group-item">Eligibility: 10+2 or equivalent</li>
+                                        <li class="list-group-item">Practical business knowledge</li>
+                                    </ul>
+                                    <a href="#syllabus" class="btn btn-outline-primary">View Syllabus</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Ad Unit - Rectangle -->
-                    <div class="ad-unit mt-5 mb-5">
-                        <div class="ad-label">Advertisement</div>
-                        <!-- Replace with your Google AdSense code -->
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
-                            crossorigin="anonymous"></script>
-                        <!-- SOL_Rectangle -->
-                        <ins class="adsbygoogle"
-                            style="display:block"
-                            data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
-                            data-ad-slot="YOUR_AD_SLOT_ID"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
                     </div>
                 </div>
                 
-                <!-- Sidebar -->
-                <div class="col-lg-4">
-                    <!-- Notice Board -->
-                    <div class="card notice-board mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title"><i class="fas fa-bullhorn me-2"></i>Notice Board</h3>
-                            <div class="notice-list">
-                                <div class="notice-item">
-                                    <h5><a href="notice-detail.html">Admission Deadline Extended</a></h5>
-                                    <p class="notice-date">June 15, 2023</p>
-                                    <p>Last date for admission extended to June 30, 2023 for all undergraduate programs.</p>
-                                </div>
-                                <div class="notice-item">
-                                    <h5><a href="notice-detail.html">Exam Schedule Released</a></h5>
-                                    <p class="notice-date">June 10, 2023</p>
-                                    <p>Annual examination schedule for all programs has been published.</p>
-                                </div>
-                                <div class="notice-item">
-                                    <h5><a href="notice-detail.html">Online Payment Facility</a></h5>
-                                    <p class="notice-date">June 5, 2023</p>
-                                    <p>Now pay your fees online through our secure payment gateway.</p>
+                <!-- PG Courses -->
+                <div class="tab-pane fade" id="pg-courses" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card course-card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">MA English</h3>
+                                    <p class="card-text">Advanced study of English literature, language, and critical theory.</p>
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">Duration: 2 Years</li>
+                                        <li class="list-group-item">Eligibility: Bachelor's degree</li>
+                                    </ul>
+                                    <a href="#syllabus" class="btn btn-outline-primary">View Syllabus</a>
                                 </div>
                             </div>
-                            <a href="notices.html" class="btn btn-outline-primary mt-3">View All Notices</a>
                         </div>
-                    </div>
-                    
-                    <!-- Quick Links -->
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title"><i class="fas fa-link me-2"></i>Quick Links</h3>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item border-0 px-0 py-2">
-                                    <a href="timetable.html"><i class="fas fa-calendar-alt me-2"></i>Exam Timetable</a>
-                                </li>
-                                <li class="list-group-item border-0 px-0 py-2">
-                                    <a href="study-material.html"><i class="fas fa-book me-2"></i>Study Material</a>
-                                </li>
-                                <li class="list-group-item border-0 px-0 py-2">
-                                    <a href="faq.html"><i class="fas fa-question-circle me-2"></i>FAQ</a>
-                                </li>
-                                <li class="list-group-item border-0 px-0 py-2">
-                                    <a href="contact.html"><i class="fas fa-envelope me-2"></i>Contact Us</a>
-                                </li>
-                                <li class="list-group-item border-0 px-0 py-2">
-                                    <a href="grievance.html"><i class="fas fa-comment-alt me-2"></i>Grievance Redressal</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Ad Unit - Sidebar -->
-                    <div class="ad-unit mb-4">
-                        <div class="ad-label">Advertisement</div>
-                        <!-- Replace with your Google AdSense code -->
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
-                            crossorigin="anonymous"></script>
-                        <!-- SOL_Sidebar -->
-                        <ins class="adsbygoogle"
-                            style="display:block"
-                            data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
-                            data-ad-slot="YOUR_AD_SLOT_ID"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                    
-                    <!-- Upcoming Events -->
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title"><i class="fas fa-calendar-check me-2"></i>Upcoming Events</h3>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item border-0 px-0 py-2">
-                                    <h5>Admission Counseling</h5>
-                                    <p class="text-muted mb-1"><i class="fas fa-clock me-2"></i>June 20, 2023 | 10:00 AM</p>
-                                    <p>Online counseling session for new admissions.</p>
-                                </li>
-                                <li class="list-group-item border-0 px-0 py-2">
-                                    <h5>Webinar on Distance Learning</h5>
-                                    <p class="text-muted mb-1"><i class="fas fa-clock me-2"></i>June 25, 2023 | 2:00 PM</p>
-                                    <p>Learn about the benefits of open learning.</p>
-                                </li>
-                            </ul>
-                            <a href="events.html" class="btn btn-outline-primary mt-3">View All Events</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">What Our Students Say</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <img src="images/student1.jpg" class="rounded-circle mb-3" width="100" alt="Student">
-                            <h4>Rahul Sharma</h4>
-                            <p class="text-muted">BA English, 2022</p>
-                            <p>"SOL provided me the flexibility to pursue my degree while working full-time. The study material was comprehensive and the faculty support was excellent."</p>
-                            <div class="text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                        <div class="col-md-4 mb-4">
+                            <div class="card course-card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">MA Economics</h3>
+                                    <p class="card-text">In-depth understanding of economic theories, policies, and applications.</p>
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">Duration: 2 Years</li>
+                                        <li class="list-group-item">Eligibility: Bachelor's degree</li>
+                                    </ul>
+                                    <a href="#syllabus" class="btn btn-outline-primary">View Syllabus</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <img src="images/student2.jpg" class="rounded-circle mb-3" width="100" alt="Student">
-                            <h4>Priya Patel</h4>
-                            <p class="text-muted">BCom, 2021</p>
-                            <p>"The online resources and virtual classrooms made learning convenient. I could access lectures anytime, which was perfect for my schedule."</p>
-                            <div class="text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
+                        <div class="col-md-4 mb-4">
+                            <div class="card course-card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">MA History</h3>
+                                    <p class="card-text">Explore historical events, movements, and historiography.</p>
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">Duration: 2 Years</li>
+                                        <li class="list-group-item">Eligibility: Bachelor's degree</li>
+                                    </ul>
+                                    <a href="#syllabus" class="btn btn-outline-primary">View Syllabus</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <img src="images/student3.jpg" class="rounded-circle mb-3" width="100" alt="Student">
-                            <h4>Ankit Verma</h4>
-                            <p class="text-muted">MA History, 2023</p>
-                            <p>"As someone from a remote area, SOL gave me access to quality education I wouldn't have otherwise. The digital library was particularly helpful."</p>
-                            <div class="text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                        <div class="col-md-4 mb-4">
+                            <div class="card course-card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">MA Hindi</h3>
+                                    <p class="card-text">Advanced study of Hindi literature, language, and composition.</p>
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">Duration: 2 Years</li>
+                                        <li class="list-group-item">Eligibility: Bachelor's degree</li>
+                                    </ul>
+                                    <a href="#syllabus" class="btn btn-outline-primary">View Syllabus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card course-card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">MA Marathi</h3>
+                                    <p class="card-text">Comprehensive program in Marathi literature and language studies.</p>
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">Duration: 2 Years</li>
+                                        <li class="list-group-item">Eligibility: Bachelor's degree</li>
+                                    </ul>
+                                    <a href="#syllabus" class="btn btn-outline-primary">View Syllabus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card course-card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">MA Education</h3>
+                                    <p class="card-text">Advanced study of educational theories, practices, and research.</p>
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">Duration: 2 Years</li>
+                                        <li class="list-group-item">Eligibility: Bachelor's degree</li>
+                                    </ul>
+                                    <a href="#syllabus" class="btn btn-outline-primary">View Syllabus</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -812,19 +365,18 @@
             </div>
         </div>
     </section>
-
-    <!-- Ad Unit - Bottom Banner -->
-    <div class="container mt-4 mb-4">
-        <div class="ad-unit">
-            <div class="ad-label">Advertisement</div>
-            <!-- Replace with your Google AdSense code -->
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
-                crossorigin="anonymous"></script>
-            <!-- SOL_Bottom_Banner -->
+    
+    <!-- Ad Container (Middle) -->
+    <div class="container">
+        <div class="ad-container">
+            <!-- Google AdSense Ad Unit -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+            crossorigin="anonymous"></script>
+            <!-- SOL_Middle_Banner -->
             <ins class="adsbygoogle"
                 style="display:block"
-                data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
-                data-ad-slot="YOUR_AD_SLOT_ID"
+                data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="XXXXXXXXXX"
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
             <script>
@@ -832,85 +384,389 @@
             </script>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
+    
+    <!-- Admission Section -->
+    <section class="py-5 bg-light" id="admission">
         <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="fw-bold">Admission Procedure</h2>
+                    <p class="lead text-muted">Simple steps to enroll in your desired program</p>
+                </div>
+            </div>
+            
             <div class="row">
-                <div class="col-lg-4 col-md-6 footer-links mb-4">
-                    <h5>About SOL</h5>
-                    <p>The School of Open Learning is committed to providing quality education through flexible learning solutions, making higher education accessible to all.</p>
-                    <div class="social-icons mt-4">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                <div class="col-lg-6">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Admission Process</h3>
+                        <p>Our admission process is designed to be simple and student-friendly. Follow these steps to enroll in your desired program:</p>
+                        <ol>
+                            <li>Check eligibility criteria for your chosen course</li>
+                            <li>Fill out the online application form</li>
+                            <li>Upload required documents</li>
+                            <li>Pay the application fee</li>
+                            <li>Receive confirmation and study materials</li>
+                        </ol>
+                        <a href="https://sppu.digitaluniversity.ac/admissions" class="btn btn-primary mt-3" target="_blank">Apply Now</a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 footer-links mb-4">
-                    <h5>Quick Links</h5>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="admission.html">Admission</a></li>
-                        <li><a href="results.html">Results</a></li>
-                    </ul>
+                
+                <div class="col-lg-6">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3>ABC ID & DBE ID</h3>
+                        <p>Your ABC ID (Admission Beneficiary Code) and DBE ID (Distance Board of Education ID) are crucial for accessing all SOL services.</p>
+                        
+                        <div class="accordion" id="idAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abcIdInfo">
+                                        About ABC ID
+                                    </button>
+                                </h2>
+                                <div id="abcIdInfo" class="accordion-collapse collapse show" data-bs-parent="#idAccordion">
+                                    <div class="accordion-body">
+                                        <p>ABC ID is generated when you apply for admission. It helps track your application status and is used for all communications.</p>
+                                        <p>If you've forgotten your ABC ID, contact our helpdesk with your application details.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dbeIdInfo">
+                                        About DBE ID
+                                    </button>
+                                </h2>
+                                <div id="dbeIdInfo" class="accordion-collapse collapse" data-bs-parent="#idAccordion">
+                                    <div class="accordion-body">
+                                        <p>DBE ID is provided after admission confirmation. This is your permanent student ID for the duration of your program.</p>
+                                        <p>Use DBE ID to access study materials, submit assignments, and register for exams.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-links mb-4">
-                    <h5>Resources</h5>
-                    <ul>
-                        <li><a href="syllabus.html">Syllabus</a></li>
-                        <li><a href="study-material.html">Study Material</a></li>
-                        <li><a href="library.html">Digital Library</a></li>
-                        <li><a href="timetable.html">Exam Timetable</a></li>
-                        <li><a href="notices.html">Notices</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-links mb-4">
-                    <h5>Contact Us</h5>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Education Road, Learning City, LC 12345</li>
-                        <li><i class="fas fa-phone-alt me-2"></i> +1 234 567 890</li>
-                        <li><i class="fas fa-envelope me-2"></i> info@schoolofopenlearning.edu</li>
-                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9:00 AM - 5:00 PM</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright text-center">
-                <p class="mb-0">&copy; 2023 School of Open Learning. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <a href="#" class="btn btn-primary back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99;">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
     
-    <!-- Custom JS -->
-    <script>
-        // Back to top button
-        window.addEventListener('scroll', function() {
-            var backToTop = document.querySelector('.back-to-top');
-            if (window.pageYOffset > 300) {
-                backToTop.style.display = 'block';
-            } else {
-                backToTop.style.display = 'none';
-            }
-        });
-        
-        // Document filter functionality
-        document.getElementById('filter-btn').addEventListener('click', function() {
-            var loader = document.getElementById('document-loader');
-            var content = document.getElementById('document-content');
+    <!-- Syllabus Section -->
+    <section class="py-5" id="syllabus">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="fw-bold">Course Syllabus</h2>
+                    <p class="lead text-muted">Detailed curriculum for all our programs</p>
+                </div>
+            </div>
             
-            // Show loader
-            loader.style.display = 'block';
-            content.style.display = 'none';
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Undergraduate Programs</h3>
+                            <p class="card-text">View the detailed syllabus for our BA and BCom programs, including semester-wise subjects and credit distribution.</p>
+                            <a href="http://unipune.ac.in/SOL/Syllabus.html" class="btn btn-primary" target="_blank">UG Syllabus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Postgraduate Programs</h3>
+                            <p class="card-text">Access the complete syllabus for all MA programs, including specialization options and research components.</p>
+                            <a href="http://unipune.ac.in/SOL/Syllabus.html" class="btn btn-primary" target="_blank">PG Syllabus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            //
+            <div class="alert alert-info mt-4">
+                <h4><i class="fas fa-info-circle me-2"></i> Syllabus Updates</h4>
+                <p>Our syllabi are periodically updated to reflect current academic standards and industry requirements. Always download the latest version before beginning your studies.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Study Material Section -->
+    <section class="py-5 bg-light" id="study-material">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="fw-bold">Study Material</h2>
+                    <p class="lead text-muted">Comprehensive resources to support your learning</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Textbooks & Guides</h3>
+                        <p>Access recommended textbooks, reference materials, and study guides curated by our faculty.</p>
+                        <a href="#study-material" class="btn btn-outline-primary">View Materials</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Lectures</h3>
+                        <p>Watch recorded lectures by experienced professors covering all topics in your syllabus.</p>
+                        <a href="https://www.youtube.com/user/cecedusat" class="btn btn-outline-primary" target="_blank">Watch Videos</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Sample Questions</h3>
+                        <p>Practice with previous years' question papers and model answers to prepare for exams.</p>
+                        <a href="#study-material" class="btn btn-outline-primary">Practice Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Exams Section -->
+    <section class="py-5" id="exams">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="fw-bold">Examination</h2>
+                    <p class="lead text-muted">Everything you need for exam preparation and results</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Exam Form</h3>
+                            <p class="card-text">Submit your examination form online within the specified dates to appear for semester/yearly exams.</p>
+                            <div class="d-grid gap-2">
+                                <a href="https://sppuapp.digitaluniversity.ac/PreExamv2_ExamformSubmission_PpAmAtWise.aspx" class="btn btn-primary" target="_blank">Fill Exam Form</a>
+                                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#examDatesModal">View Exam Schedule</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Hall Ticket</h3>
+                            <p class="card-text">Download your hall ticket which is mandatory for entering the examination center.</p>
+                            <div class="d-grid gap-2">
+                                <a href="https://sppuapp.digitaluniversity.ac/PreExamV2_DownloadHallTicket_New.aspx" class="btn btn-primary" target="_blank">Download Hall Ticket</a>
+                                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#examGuidelinesModal">Exam Guidelines</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Results</h3>
+                            <p class="card-text">Check your examination results and download mark sheets once declared by the university.</p>
+                            <div class="d-grid gap-2">
+                                <a href="https://sppuapp.digitaluniversity.ac/SearchDuplicateResult.aspx?ID=28176" class="btn btn-primary" target="_blank">Check Results</a>
+                                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#revaluationModal">Revaluation Process</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-warning mt-4">
+                <h4><i class="fas fa-exclamation-triangle me-2"></i> Important Notice</h4>
+                <p>Exam forms submitted after the last date will attract a late fee. No forms will be accepted after the extended deadline under any circumstances.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Documents Section -->
+    <section class="py-5 bg-light" id="documents">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="fw-bold">Documents & Certificates</h2>
+                    <p class="lead text-muted">Official documents for your academic records</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Transfer Certificate (TC)</h3>
+                            <p class="card-text">Apply for your Transfer Certificate when moving to another institution or after course completion.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><a href="http://unipune.ac.in/SOL/pdf/pdf2024/TC%20Notice_13042024.pdf" target="_blank">TC Notice</a></li>
+                                <li class="list-group-item"><a href="http://unipune.ac.in/SOL/pdf/pdf2024/TC%20Form_13042024.pdf" target="_blank">TC Application Form</a></li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tcProcessModal">TC Process</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Migration Certificate</h3>
+                            <p class="card-text">Required when joining another university or for certain employment purposes.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><a href="https://sim.unipune.ac.in/SIM_APP/Account/CreateAccount" target="_blank">Apply Online</a></li>
+                                <li class="list-group-item"><a href="https://sim.unipune.ac.in/SIM_APP/" target="_blank">Check Status</a></li>
+                            </ul>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#migrationProcessModal">Migration Process</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Other Documents</h3>
+                            <p class="card-text">Additional certificates and documents available upon request:</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i> Degree Certificate</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> Provisional Certificate</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i> Mark Sheets</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> Bonafide Certificate</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i> Character Certificate</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> Gap Certificate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#documentRequestModal">Request Documents</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Ad Container (Bottom) -->
+    <div class="container">
+        <div class="ad-container">
+            <!-- Google AdSense Ad Unit -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+            crossorigin="anonymous"></script>
+            <!-- SOL_Bottom_Banner -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="XXXXXXXXXX"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="fw-bold">Contact Us</h2>
+                    <p class="lead text-muted">We're here to help with any questions</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Get in Touch</h3>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option value="admission">Admission Query</option>
+                                        <option value="exam">Exam Related</option>
+                                        <option value="study-material">Study Material</option>
+                                        <option value="certificate">Certificates/Documents</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Contact Information</h3>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-map-marker-alt me-2 text-primary"></i> Address</h5>
+                                <p>School of Open Learning<br>
+                                University Campus,<br>
+                                Pune - 411007, Maharashtra, India</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-phone-alt me-2 text-primary"></i> Phone</h5>
+                                <p>+91-20-25511234 (Helpdesk)<br>
+                                +91-20-25511567 (Admission)</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-envelope me-2 text-primary"></i> Email</h5>
+                                <p>info@soluniversity.edu.in<br>
+                                helpdesk@soluniversity.edu.in</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="fas fa-clock me-2 text-primary"></i> Working Hours</h5>
+                                <p>Monday to Friday: 9:30 AM - 5:30 PM<br>
+                                Saturday: 10:00 AM - 2:00 PM<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--
