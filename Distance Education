@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Savitribai Phule Pune University School of Open Learning - Quality Distance Education Programs">
+    <meta name="keywords" content="SOL, Distance Education, SSR Distance Education, Distance Learning, School of Open Learning, SOL SPPU, SODL, School of Open and Distance Learning, UG Courses, PG Courses, Online Admission">
+    <title>SOL - School of Open Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .navbar {
+            background: var(--primary-color)!important;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('header-bg.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+
+        .card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ad-unit {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+        }
+
+        .course-dropdown {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4132155446158502"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">SOL Pune</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu course-dropdown">
+                            <li><h6 class="dropdown-header">UG Programs</h6></li>
+                            <li><a class="dropdown-item" href="#ba">BA</a></li>
+                            <li><a class="dropdown-item" href="#bcom">BCom</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">PG Programs</h6></li>
+                            <li><a class="dropdown-item" href="#ma">MA</a></li>
+                            <li><a class="dropdown-item" href="#mcom">MCom</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#admission">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#materials">Study Materials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#exams">Exams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">School of Open Learning</h1>
+            <p class="lead">Empowering Through Distance Education</p>
+            <!-- Ad Unit 1 -->
+            <div class="ad-unit">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-4132155446158502"
+                     data-ad-slot="8010739961"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Admission Section -->
+        <section id="admission" class="mb-5">
+            <h2 class="mb-4">Admission Process</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-user-graduate"></i> New Admissions</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="https://sppu.digitaluniversity.ac/admissions" target="_blank">Admission Procedure</a></li>
+                                <li class="list-group-item"><a href="https://sppuoa.digitaluniversity.ac/ScheduleDetails" target="_blank">Admission Schedule</a></li>
+                                <li class="list-group-item"><a href="https://sppuoa.digitaluniversity.ac/Login" target="_blank">Admission Form</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-info-circle"></i> Admission Help</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="https://www.youtube.com/watch?v=RAHj5oNbqIg" target="_blank">Help Tutorial</a></li>
+                                <li class="list-group-item"><a href="https://sppuoa.digitaluniversity.ac/esuvidha/instructionFinal/SavitribaiPhulePune.pdf" target="_blank">Help Presentation</a></li>
+                                <li class="list-group-item"><a href="https://sppuoa.digitaluniversity.ac/ScheduleCollegeList?ppid=39" target="_blank">Admission Centers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Materials Section -->
+        <section id="materials" class="mb-5">
+            <h2 class="mb-4">Study Resources</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Course Materials</h5>
+                            <select class="form-select mb-3" id="courseSelect">
+                                <option value="ba">BA</option>
+                                <option value="bcom">BCom</option>
+                                <option value="ma">MA</option>
+                                <option value="mcom">MCom</option>
+                            </select>
+                            <div id="materialLinks" class="list-group">
+                                <!-- Dynamic content loaded by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- Ad Unit 2 -->
+                    <div class="ad-unit">
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-4132155446158502"
+                             data-ad-slot="8563380095"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exam Section -->
+        <section id="exams" class="mb-5">
+            <h2 class="mb-4">Exam Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Exam Forms</h5>
+                            <a href="https://sppuapp.digitaluniversity.ac/PreExamv2_ExamformSubmission_PpAmAtWise.aspx" class="btn btn-primary" target="_blank">Apply Online</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Hall Tickets</h5>
+                            <a href="https://sppuapp.digitaluniversity.ac/PreExamV2_DownloadHallTicket_New.aspx" class="btn btn-primary" target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Results</h5>
+                            <a href="https://sppuapp.digitaluniversity.ac/SearchDuplicateResult.aspx?ID=28176" class="btn btn-primary" target="_blank">Check Results</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-envelope"></i> student.sol@unipune.ac.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> IDS Building, Near SET Guest House,<br>IUCAA Road, SPPU, Pune-411007</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#syllabus">Syllabus</a></li>
+                        <li><a href="#question-papers">Question Papers</a></li>
+                        <li><a href="#documents">Certificates</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#accessibility">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 School of Open Learning, SPPU. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Study Materials Dynamic Loader
+        const materials = {
+            ba: [
+                {name: "BA Part I", url: "#"},
+                {name: "BA Part II", url: "#"},
+                {name: "BA Part III", url: "#"}
+            ],
+            bcom: [
+                {name: "BCom Part I", url: "#"},
+                {name: "BCom Part II", url: "#"},
+                {name: "BCom Part III", url: "#"}
+            ],
+            ma: [
+                {name: "MA English Part I", url: "https://drive.google.com/file/d/1La82mAXoGXpj71SmMXBKw1an1VjB7lAc/view"},
+                {name: "MA Economics Part I", url: "https://drive.google.com/file/d/1FhfaR-01PKMzlGdGahM7OPgBcOWOzSdT/view"},
+                {name: "MA History Part I", url: "https://drive.google.com/file/d/1BEAHPv-uNlZxgeQ8o-EeNqyHk5ec6I-5/view"}
+            ],
+            mcom: [
+                {name: "MCom Part I", url: "#"},
+                {name: "MCom Part II", url: "#"}
+            ]
+        };
+
+        function loadMaterials(course) {
+            const container = document.getElementById('materialLinks');
+            container.innerHTML = materials[course].map(item => 
+                `<a href="${item.url}" class="list-group-item list-group-item-action" target="_blank">${item.name}</a>`
+            ).join('');
+        }
+
+        document.getElementById('courseSelect').addEventListener('change', (e) => {
+            loadMaterials(e.target.value);
+        });
+
+        // Initialize with BA materials
+        loadMaterials('ba');
+
+        // Form Validation
+        document.getElementById('idForm').addEventListener('submit', function(e) {
+            const idInput = document.getElementById('studentId');
+            if (!idInput.value.match(/^SOL\d{8}$/)) {
+                alert('Please enter a valid SOL ID (format: SOL followed by 8 digits)');
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
