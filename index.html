@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOL - School of Open Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2A5C82;
+            --secondary: #E74C3C;
+            --accent: #27AE60;
+            --light: #F8F9FA;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--light);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary), #1A365D);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: var(--light);
+            transform: skewY(-3deg);
+        }
+
+        .feature-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .nav-pills .nav-link {
+            border-radius: 10px;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .course-accordion .accordion-button {
+            background: var(--light);
+            font-weight: 600;
+        }
+
+        .quick-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gradient-btn {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white!important;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .gradient-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-4">Welcome to School of Open Learning</h1>
+        <p class="lead mb-5">Empowering Learners Through Flexible Education</p>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-3">
+                <a href="#admission" class="btn gradient-btn btn-lg w-100">Start Admission</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#materials" class="btn gradient-btn btn-lg w-100">Study Materials</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Admission Section -->
+<section class="py-5" id="admission">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: var(--primary);">Admission Portal</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="feature-card bg-white p-4">
+                    <h4><i class="fas fa-user-graduate me-2"></i>New Admissions</h4>
+                    <div class="list-group list-group-flush">
+                        <a href="https://sppu.digitaluniversity.ac/admissions" target="_blank" 
+                           class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Admission Procedure
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://sppuoa.digitaluniversity.ac/ScheduleDetails" target="_blank" 
+                           class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Admission Schedule
+                            <i class="fas fa-calendar-alt"></i>
+                        </a>
+                        <a href="https://sppuoa.digitaluniversity.ac/Login" target="_blank" 
+                           class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Admission Form
+                            <i class="fas fa-file-signature"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="feature-card bg-white p-4">
+                    <h4><i class="fas fa-question-circle me-2"></i>Admission Support</h4>
+                    <div class="list-group list-group-flush">
+                        <a href="https://www.youtube.com/watch?v=RAHj5oNbqIg" target="_blank" 
+                           class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Video Tutorial
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://sppuoa.digitaluniversity.ac/esuvidha/instructionFinal/SavitribaiPhulePune.pdf" target="_blank" 
+                           class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Help Presentation
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                        <a href="https://sppuoa.digitaluniversity.ac/ScheduleCollegeList?ppid=39" target="_blank" 
+                           class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Admission Centers
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Study Materials Section -->
+<section class="py-5 bg-light" id="materials">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: var(--primary);">Study Resources</h2>
+        <div class="course-accordion accordion" id="coursesAccordion">
+            <!-- BA Section -->
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ba">
+                        Bachelor of Arts (BA)
+                    </button>
+                </h3>
+                <div id="ba" class="accordion-collapse collapse show" data-bs-parent="#coursesAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5>FYBA</h5>
+                                        <a href="#" class="btn btn-sm gradient-btn">View Materials</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5>SYBA</h5>
+                                        <a href="#" class="btn btn-sm gradient-btn">View Materials</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5>TYBA</h5>
+                                        <a href="#" class="btn btn-sm gradient-btn">View Materials</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for other courses -->
+        </div>
+    </div>
+</section>
+
+<!-- Exam Section -->
+<section class="py-5" id="exams">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: var(--primary);">Exam Services</h2>
+        <div class="quick-links-grid">
+            <a href="https://sppuapp.digitaluniversity.ac/PreExamv2_ExamformSubmission_PpAmAtWise.aspx" 
+               class="feature-card bg-white p-4 text-center">
+                <i class="fas fa-file-alt fa-3x mb-3" style="color: var(--secondary);"></i>
+                <h5>Exam Form</h5>
+            </a>
+            <a href="https://sppuapp.digitaluniversity.ac/PreExamV2_DownloadHallTicket_New.aspx" 
+               class="feature-card bg-white p-4 text-center">
+                <i class="fas fa-ticket-alt fa-3x mb-3" style="color: var(--accent);"></i>
+                <h5>Hall Ticket</h5>
+            </a>
+            <a href="https://sppuapp.digitaluniversity.ac/SearchDuplicateResult.aspx?ID=28176" 
+               class="feature-card bg-white p-4 text-center">
+                <i class="fas fa-poll fa-3x mb-3" style="color: var(--primary);"></i>
+                <h5>Results</h5>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
