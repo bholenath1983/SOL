@@ -672,19 +672,52 @@
                 </div>
             </div>
 
-        <div class="contact-info">
-            <h3>Contact Us</h3>
-            <p>Email: student.sol@unipune.ac.in</p>
-            <address>
+       
+  <div class="col-lg-6">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3> Contact us</h3>
+                        <p>Your Email ID and Address are crucial for accessing all SOL services.</p>
+                        
+                        <div class="accordion" id="idAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abcIdInfo">
+                                        About ABC ID
+                                    </button>
+                                </h2>
+                                <div id="abcIdInfo" class="accordion-collapse collapse show" data-bs-parent="#idAccordion">
+                                    <div class="accordion-body">
+                                        <p>Email ID is generated when you contact to SOL.</p> 
+                                        <p>Email: student.sol@unipune.ac.in</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dbeIdInfo">
+                                        About Address
+                                    </button>
+                                </h2>
+                                <div id="dbeIdInfo" class="accordion-collapse collapse" data-bs-parent="#idAccordion">
+                                    <div class="accordion-body">
+                                        <p>Address is used to contact with SOL. 
+                                   <address>
                 School of Open Learning (SoL),<br>
                 IDS Building, Near SET Guest House,<br>
                 IUCAA Road, SPPU, Pune-411007
-            </ul>
-             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="# Contanct us Modal">Contact us</button> 
-            </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-            
+    </section>
+           
             <div class="row mt-4">
                 <div class="col-12">
                     <div class="card">
@@ -761,6 +794,7 @@
                                         <option value="study-material">Study Material</option>
                                         <option value="certificate">Certificates/Documents</option>
                                         <option value="other">Other</option>
+                                        <option value="Contact us">Email ID/Address</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
