@@ -671,6 +671,19 @@
                     </div>
                 </div>
             </div>
+
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: student.sol@unipune.ac.in</p>
+            <address>
+                School of Open Learning (SoL),<br>
+                IDS Building, Near SET Guest House,<br>
+                IUCAA Road, SPPU, Pune-411007
+            </ul>
+             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="# Contanct us Modal">Contact us</button> 
+            </address>
+        </div>
+    </footer>
             
             <div class="row mt-4">
                 <div class="col-12">
@@ -725,18 +738,7 @@
         </div>
     </div>
     
-      <footer id="contact Us" class="animated">
-        <div class="contact-info">
-            <h3>Contact Us</h3>
-            <p>Email: student.sol@unipune.ac.in</p>
-            <address>
-                School of Open Learning (SoL),<br>
-                IDS Building, Near SET Guest House,<br>
-                IUCAA Road, SPPU, Pune-411007
-            </address>
-        </div>
-    </footer>
-           
+            
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <div class="card h-100">
