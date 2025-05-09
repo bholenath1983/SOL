@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="School of Open Learning (SOL) Affiliated to University of Pune- Offering UG and PG courses including BA, BCom, MA in various subjects. Admission procedures, study materials, exam forms and results.">
+    <meta name="description" content="School of Open Learning (SOL) Affiliated to University of Pune- Offering UG and PG courses including BA, BCom, MA in various subjects, MCom. Admission procedures, study materials, exam forms and results.">
     <meta name="keywords" content="SOL, SSR Distance Learning, Open Learning, Distance Education, BA, BCom, MA, Admission, Syllabus, Study Material, Exam Results">
     <meta name="author" content="School of Open Learning">
     <title>School of Open Learning (SOL) | Distance Education Programs</title>
@@ -168,13 +168,9 @@
                             <li><a class="dropdown-item" href="#ug-courses">BCom</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><h6 class="dropdown-header">Postgraduate</h6></li>
-                            <li><a class="dropdown-item" href="#pg-courses">MA English</a></li>
-                            <li><a class="dropdown-item" href="#pg-courses">MA Economics</a></li>
-                            <li><a class="dropdown-item" href="#pg-courses">MA History</a></li>
-                            <li><a class="dropdown-item" href="#pg-courses">MA Hindi</a></li>
-                            <li><a class="dropdown-item" href="#pg-courses">MA Marathi</a></li>
-                            <li><a class="dropdown-item" href="#pg-courses">MA Education</a></li>
-                        </ul>
+                            <li><a class="dropdown-item" href="#pg-courses">MCom</a></li>
+                            <li><a class="dropdown-item" href="#pg-courses">MA (English, Economics, History, Hindi, Marathi, Education, Sociology, Philosophy, Political Science, Mass Communication)</a></li>
+                            </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#admission">Admission</a>
@@ -210,12 +206,12 @@
     <div class="container">
         <div class="ad-container">
             <!-- Google AdSense Ad Unit -->
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4132155446158502/8010739961"
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-4132155446158502/1749494075"
             crossorigin="anonymous"></script>
             <!-- SOL_Top_Banner -->
             <ins class="adsbygoogle"
                 style="display:block"
-                data-ad-client="ca-pub-4132155446158502/8010739961"
+                data-ad-client="ca-app-pub-4132155446158502/1749494075"
                 data-ad-slot="4132155446158502/8010739961"
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
