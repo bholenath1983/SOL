@@ -671,30 +671,7 @@
                     </div>
                 </div>
             </div>
-       
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dbeIdInfo">
-                                        About Address
-                                    </button>
-                                </h2>
-                                <div id="dbeIdInfo" class="accordion-collapse collapse" data-bs-parent="#idAccordion">
-                                    <div class="accordion-body">
-                                        <p>Address is used to contact with SOL. 
-                                   <address>
-                School of Open Learning (SoL),<br>
-                IDS Building, Near SET Guest House,<br>
-                IUCAA Road, SPPU, Pune-411007
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-           
+                                         
             <div class="row mt-4">
                 <div class="col-12">
                     <div class="card">
