@@ -671,30 +671,7 @@
                     </div>
                 </div>
             </div>
-
        
-  <div class="col-lg-6">
-                    <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-id-card"></i>
-                        </div>
-                        <h3> Contact us</h3>
-                        <p>Your Email ID and Address are crucial for accessing all SOL services.</p>
-                        
-                        <div class="accordion" id="idAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abcIdInfo">
-                                        About ABC ID
-                                    </button>
-                                </h2>
-                                <div id="abcIdInfo" class="accordion-collapse collapse show" data-bs-parent="#idAccordion">
-                                    <div class="accordion-body">
-                                        <p>Email ID is generated when you contact to SOL.</p> 
-                                        <p>Email: student.sol@unipune.ac.in</p>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dbeIdInfo">
